@@ -22,7 +22,7 @@ export const profile: {
   about: about,
   dob: "2000-10-03",
   gender: "Male",
-  prof: "Coder",
+  prof: "Frontend Developer",
   followers: true,
   xp: true,
   achievements: true,
