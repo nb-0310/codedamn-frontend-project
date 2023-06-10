@@ -1,7 +1,13 @@
 import React, { useContext, useState } from "react";
 import { SkillsContext } from "../Contexts/SkillsContext";
-import { EducationContext, EducationContextType } from "../Contexts/EducationContaxt";
-import { ExperienceContext, ExperienceContextType } from "../Contexts/ExperienceContext";
+import {
+  EducationContext,
+  EducationContextType,
+} from "../Contexts/EducationContaxt";
+import {
+  ExperienceContext,
+  ExperienceContextType,
+} from "../Contexts/ExperienceContext";
 import { ProfileContext } from "../Contexts/ProfileContext";
 const html = require("../Assets/Icons/html.svg") as string;
 const css = require("../Assets/Icons/css.svg") as string;
@@ -13,7 +19,6 @@ const node = require("../Assets/Icons/node.svg") as string;
 import Image from "next/image";
 import Home from "./home";
 
-
 const Resume: React.FC = () => {
   const { skillsData, updateSkillsData } = useContext(SkillsContext);
   const { profileData, updateProfileData } = useContext(ProfileContext);
@@ -22,7 +27,7 @@ const Resume: React.FC = () => {
     EducationContext
   );
   const { educationData = [], updateEducationData } = educationContext || {};
-  
+
   const experienceContext = useContext<ExperienceContextType | null>(
     ExperienceContext
   );
@@ -53,7 +58,9 @@ const Resume: React.FC = () => {
 
         <div className="p-6 md:pr-52 bg-[#FAFAFA] border border-zinc-100 rounded-xl">
           <p className="font-medium text-[#18181B] md:text-base text-sm mb-6">
-            {showMore ? profileData.about : `${profileData.about.slice(0, 500)}...`}
+            {showMore
+              ? profileData.about
+              : `${profileData.about.slice(0, 500)}...`}
             {showMore ? (
               <div>
                 <br />

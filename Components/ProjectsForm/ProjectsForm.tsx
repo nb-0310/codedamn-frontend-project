@@ -3,7 +3,7 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 import Brandbtn from "../Buttons/BrandBtn";
 import ProjectsModal from "../ProjectsModal/ProjectsModal";
 import { ProjectsContext } from "../../Contexts/ProjectsContext";
-import {Project} from "../../Contexts/ProjectsContext"
+import { Project } from "../../Contexts/ProjectsContext";
 import Link from "next/link";
 
 interface ProjectsFormProps {}
@@ -57,7 +57,7 @@ const ProjectsForm: React.FC<ProjectsFormProps> = () => {
             py-1 px-2 rounded-md"
             onClick={() => {
               setShowModal(!showModal);
-              setEditIndex(null)
+              setEditIndex(null);
             }}
           >
             Add
@@ -67,16 +67,16 @@ const ProjectsForm: React.FC<ProjectsFormProps> = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {visibleProjects.map((item: Project, index: number) => (
-            <ProjectCard
-              title={item["title"]}
-              demo={item["demo"]}
-              tech={item["tech"]}
-              img={item["img"]}
-              contri={item["contri"]}
-              key={item["title"]}
-              onDelete={() => deleteProject(index)}
-              onEdit={() => editProjects(index)}
-            />
+          <ProjectCard
+            title={item["title"]}
+            demo={item["demo"]}
+            tech={item["tech"]}
+            img={item["img"]}
+            contri={item["contri"]}
+            key={item["title"]}
+            onDelete={() => deleteProject(index)}
+            onEdit={() => editProjects(index)}
+          />
         ))}
       </div>
 

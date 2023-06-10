@@ -22,7 +22,8 @@ interface ExperienceProviderProps {
 }
 
 const ExperienceProvider = ({ children }: ExperienceProviderProps) => {
-  const [experienceData, setExperienceData] = useState<Experience[]>(experience);
+  const [experienceData, setExperienceData] =
+    useState<Experience[]>(experience);
 
   const updateExperienceData = (newData: Experience[]) => {
     setExperienceData(newData);
@@ -30,7 +31,7 @@ const ExperienceProvider = ({ children }: ExperienceProviderProps) => {
 
   const experienceContextValue: ExperienceContextType = {
     experienceData,
-    updateExperienceData
+    updateExperienceData,
   };
 
   return (

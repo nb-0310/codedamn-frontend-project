@@ -23,7 +23,7 @@ const ProjectsModal: React.FC<ProjectsModalProps> = ({
   onClose,
   projectsData,
   updateProjectsData,
-  editProjects
+  editProjects,
 }) => {
   if (!visible) return null;
 

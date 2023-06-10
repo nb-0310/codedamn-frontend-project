@@ -1,7 +1,7 @@
-import React, {ReactElement, ReactNode} from "react";
-import { NextPage } from 'next';
-import type { AppProps } from 'next/app';
-import "../styles/globals.css"
+import React, { ReactElement, ReactNode } from "react";
+import { NextPage } from "next";
+import type { AppProps } from "next/app";
+import "../styles/globals.css";
 import NavbarContainer from "./navbar";
 import { Inter } from "next/font/google";
 import { SkillsProvider } from "../Contexts/SkillsContext";

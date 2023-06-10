@@ -22,15 +22,20 @@ interface PlaygroundProviderProps {
   children: ReactNode;
 }
 
-const PlaygroundProvider: React.FC<PlaygroundProviderProps> = ({ children }) => {
-  const [playgroundData, setPlaygroundData] = useState<Playground[]>(defaultPlaygrounds);
+const PlaygroundProvider: React.FC<PlaygroundProviderProps> = ({
+  children,
+}) => {
+  const [playgroundData, setPlaygroundData] =
+    useState<Playground[]>(defaultPlaygrounds);
 
   const updatePlaygroundData = (newData: Playground[]) => {
     setPlaygroundData(newData);
   };
 
   return (
-    <PlaygroundContext.Provider value={{ playgroundData, updatePlaygroundData }}>
+    <PlaygroundContext.Provider
+      value={{ playgroundData, updatePlaygroundData }}
+    >
       {children}
     </PlaygroundContext.Provider>
   );

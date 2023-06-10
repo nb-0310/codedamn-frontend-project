@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import ProfileHeader from '../Components/ProfileHeader/ProfileHeader';
+import React, { ReactNode } from "react";
+import ProfileHeader from "../Components/ProfileHeader/ProfileHeader";
 
 interface HomeProps {
   children: ReactNode;

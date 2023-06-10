@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import Navbar from '../Components/Navbar/Navbar';
+import React, { ReactNode } from "react";
+import Navbar from "../Components/Navbar/Navbar";
 
 interface NavbarContainerProps {
   children: ReactNode;

@@ -19,7 +19,7 @@ interface ProfileContextType {
   updateProfileData: (newData: Profile) => void;
 }
 
-const defaultProfile: Profile = profile
+const defaultProfile: Profile = profile;
 
 const ProfileContext = createContext<ProfileContextType>({
   profileData: defaultProfile,

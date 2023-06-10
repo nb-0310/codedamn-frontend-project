@@ -48,8 +48,7 @@ const Navbar: React.FC = () => {
 
       <div className="flex justify-between items-center gap-4">
         <div className="flex justify-between items-center">
-          <Image src={thunder} alt="thunder" />
-          2
+          <Image src={thunder} alt="thunder" />2
         </div>
         <div>
           <Image src={bell} alt="bell-icon" />
@@ -60,7 +59,8 @@ const Navbar: React.FC = () => {
               src={profileData.img === "" ? pfp : profileData.img}
               alt="profile-pic"
               className="w-full h-full"
-              fill={true}
+              width={16}
+              height={16}
             />
           </div>
           <div

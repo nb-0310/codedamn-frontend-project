@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react';
-import Sidebar from '../Components/Sidebar/Sidebar';
+import React, { ReactNode } from "react";
+import Sidebar from "../Components/Sidebar/Sidebar";
 
 interface EditProps {
   children: ReactNode;

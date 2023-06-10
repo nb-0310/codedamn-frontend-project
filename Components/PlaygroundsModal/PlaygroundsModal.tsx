@@ -63,10 +63,7 @@ const PlaygroundsModal: React.FC<PlaygroundsModalProps> = ({
       <div className="bg-white flex flex-col justify-center items-center p-8 rounded-lg">
         <form className="w-full">
           <div className="w-full mb-6">
-            <label
-              htmlFor="about"
-              className="mb-1 block text-sm font-semibold"
-            >
+            <label htmlFor="about" className="mb-1 block text-sm font-semibold">
               Title
             </label>
             <input
@@ -81,10 +78,7 @@ const PlaygroundsModal: React.FC<PlaygroundsModalProps> = ({
           </div>
 
           <div className="w-full mb-6">
-            <label
-              htmlFor="about"
-              className="mb-1 block text-sm font-semibold"
-            >
+            <label htmlFor="about" className="mb-1 block text-sm font-semibold">
               What is the tech stack used in the playground?
             </label>
             <select

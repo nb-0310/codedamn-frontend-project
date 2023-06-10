@@ -18,7 +18,7 @@ const ProjectsDisplayCard: React.FC<ProjectDisplayCardProps> = ({
   title,
   demo,
   tech,
-  img
+  img,
 }) => {
   const techImageMap: Record<string, string> = {
     "HTML/CSS": html,
@@ -60,7 +60,6 @@ const ProjectsDisplayCard: React.FC<ProjectDisplayCardProps> = ({
             <Image src={techImageSource1} alt="tech" />
             {tech[0]}
           </p>{" "}
-          
           <div className="w-1 h-1 bg-[#71717A] rounded-full"></div>{" "}
           <p className="flex text-[#71717A] text-sm gap-2 items-center">
             <Image src={techImageSource2} alt="tech" />

@@ -34,7 +34,7 @@ const EducationForm: React.FC = () => {
     const dateRegex = /^[a-zA-Z]+\s*,\s*\d{4}$/;
     const isStartValid = dateRegex.test(start);
     const isEndValid = dateRegex.test(end);
-  
+
     const startDate = new Date(start);
     const endDate = new Date(end);
     const isDateValid = startDate <= endDate;
@@ -45,8 +45,11 @@ const EducationForm: React.FC = () => {
       cgpa.trim() !== "" &&
       start.trim() !== "" &&
       end.trim() !== "" &&
-      desc.trim() !== ""
-    ) && isStartValid && isEndValid && isDateValid;
+      desc.trim() !== "" &&
+      isStartValid &&
+      isEndValid &&
+      isDateValid
+    );
   };
 
   const handleSave = () => {
@@ -66,7 +69,7 @@ const EducationForm: React.FC = () => {
 
         updateEducationData([obj, ...educationData]);
         setIsEditing(false);
-        setError(false)
+        setError(false);
       }
     } else {
       setError(true);
@@ -201,7 +204,10 @@ const EducationForm: React.FC = () => {
           </div>
 
           {error && (
-            <div className="text-sm text-red-600 mb-3">Please input data correctly as mentioned in the form! All fields are required!</div>
+            <div className="text-sm text-red-600 mb-3">
+              Please input data correctly as mentioned in the form! All fields
+              are required!
+            </div>
           )}
 
           <div className="flex w-full justify-end gap-3 items-center">

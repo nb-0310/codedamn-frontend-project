@@ -156,8 +156,10 @@ const ExperienceForm = (): JSX.Element => {
               ></textarea>
             </div>
 
-              <div className="text-sm mb-3">Click '+', enter the tech, and press 'Enter'</div>
-              
+            <div className="text-sm mb-3">
+              Click '+', enter the tech, and press 'Enter'
+            </div>
+
             <div className="flex gap-4 items-center mb-3">
               <div className="flex gap-4 items-center text-sm text-[#4F46E5]">
                 {tech.length > 0 &&
