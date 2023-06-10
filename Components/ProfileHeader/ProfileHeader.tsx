@@ -76,7 +76,8 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = () => {
               src={profileData.img !== "" ? profileData.img : pfp}
               alt="pfp"
               className="w-full h-full object-cover"
-              fill={true}
+              width={48}
+              height={48}
             />
           </div>
           <div className="sm:w-20 sm:h-20 w-16 h-16 absolute -right-5 -bottom-5">
