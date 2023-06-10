@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hexagon {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #0ea5e9;
+  background: radial-gradient(50% 50% at 50% 50%, #000000 0%, #222023 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.active {
+  transition: 0.3s;
+  color: black;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #18181B;
+  width: 10px;
+  height: 35px;
+  border-radius: 8px;
+  /* transition: all 0.3s ease; */
+  animation: animate 0.3s;
+}
+
+@keyframes animate {
+  0% {
+    background: transparent;
+  }
+
+  100% {
+    background: #18181B;
+  }
+}
