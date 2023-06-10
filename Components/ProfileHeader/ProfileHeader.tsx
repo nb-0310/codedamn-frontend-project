@@ -54,8 +54,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = () => {
               ? URL.createObjectURL(img)
               : bg
           }
-          width={600}
-          height={150}
+          fill={true}
           className="w-full h-full object-cover rounded-t-xl"
           alt="cover"
         />
@@ -77,8 +76,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = () => {
               src={profileData.img !== "" ? profileData.img : pfp}
               alt="pfp"
               className="w-full h-full object-cover"
-              width={48}
-              height={48}
+              fill={true}
             />
           </div>
           <div className="sm:w-20 sm:h-20 w-16 h-16 absolute -right-5 -bottom-5">

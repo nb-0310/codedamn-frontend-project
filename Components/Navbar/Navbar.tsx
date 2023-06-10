@@ -60,8 +60,7 @@ const Navbar: React.FC = () => {
               src={profileData.img === "" ? pfp : profileData.img}
               alt="profile-pic"
               className="w-full h-full"
-              width={16}
-              height={16}
+              fill={true}
             />
           </div>
           <div
