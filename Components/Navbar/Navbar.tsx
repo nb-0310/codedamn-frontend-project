@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full md:px-10 md:py-7 px-5 py-2 flex justify-between items-center">
       <Link href="/">
-        <div className="md:text-2xl text-md font-bold">codedamn</div>
+        <div className="md:text-2xl text-md font-bold">portfolio builder</div>
       </Link>
 
       <div>
