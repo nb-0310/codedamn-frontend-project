@@ -107,13 +107,13 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = () => {
         </div>
 
         <div className="text-[#71717A] md:text-base text-xs mb-2">
-          Fullstack dev at codedamn | Harvard 22
+          4th Hokage | Village Hidden in the Leaf
         </div>
 
         <div className="flex gap-1.5 items-center mb-8">
           <Image src={Location} alt="location" />
           <span className="text-[#A1A1AA] md:text-base text-xs">
-            Mumbai, India
+            Konoha
           </span>
         </div>
 
