@@ -18,11 +18,11 @@ export const profile: {
   img: string;
   cover: string;
 } = {
-  name: "Nirzar Bhatt",
+  name: "Minato Namikaze",
   about: about,
-  dob: "2000-10-03",
+  dob: "2000-01-25",
   gender: "Male",
-  prof: "Frontend Developer",
+  prof: "Hokage",
   followers: true,
   xp: true,
   achievements: true,
