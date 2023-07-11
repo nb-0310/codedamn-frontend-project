@@ -1,7 +1,6 @@
-# Codedamn Frontend Assessment
+# Portify
 
-This is a frontend assessment project for frontend Intern placements at codedamn. The project allows users to manage and showcase their portfolio details, including projects, playgrounds, experience, education, images (profile picture, cover picture, etc.), and social links. The project is live [here](https://codedamn-frontend-project-nirzar-bhatt-git-main-nb-0310.vercel.app/)
-
+The project allows users to manage and showcase their portfolio details, including projects, playgrounds, experience, education, images (profile picture, cover picture, etc.), and social links. The project is live [here](https://portify-portfolio-builder.vercel.app/)). The project is yet incomplete as I need to create a backend for allowing users to generate a link which they can share with their network or potential employers to showcase their portfolio and resume to them.
 
 ## Features
 
@@ -38,7 +37,7 @@ The project's folder structure is organized as follows:
 
 ## Contributing
 
-Contributions to this project are welcome after this assignment is reviewed by the codedamn team. If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
 ## License
 
